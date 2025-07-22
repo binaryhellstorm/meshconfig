@@ -26,7 +26,11 @@ sudo chmod +x mesh_installer.sh
 Then run this command to kick off the automated installer:
 sudo ./mesh_installer.sh
 
-The installer will run and you may occasionally be prompted to press enter to continue. When done the installer will say "
+The installer will run and you may occasionally be prompted to press enter to continue. When done the installer will say "Install completed now exiting"
+
+Once this is done you will need to restart, as the installer will have enabled the SPI bus to allow the Pi to communicate with the NEBRA Hat. After a reboot you should be able to open the Meshtastic app in a web browser by going to https://client.meshtastic.org/ and clicking New Connection>HTTP and then entering your devices hostname or it's IP, for example "https://192.168.1.20". Make sure to select the "Use HTTPS" option.
+
+Once connected go to Config>Radio Config>LORA and choose your region. For the US you can use the US/915 region. 
 
 
 
