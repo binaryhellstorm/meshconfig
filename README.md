@@ -44,7 +44,7 @@ Once this is done you will need to restart, as the installer will have enabled t
 
 After a reboot you should be able to open the Meshtastic app in a web browser. 
 
-For reasons that are still unclear to me, you must first go to the Pi's IP in a browser after first install. So open https://IP replaceing the IP with your unit's IP or hostname. 
+For reasons that are still unclear to me, you must first go to the Pi's IP in a browser after first install. So open https://IP:9443 replaceing the IP with your unit's IP or hostname. 
 
 After that you can connect by by going to https://client.meshtastic.org/ and clicking New Connection>HTTP and then entering your devices hostname or it's IP, for example "https://192.168.1.20". Make sure to select the "Use HTTPS" option.
 
