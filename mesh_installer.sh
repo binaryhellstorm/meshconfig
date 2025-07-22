@@ -2,12 +2,10 @@ echo 'deb http://download.opensuse.org/repositories/network:/Meshtastic:/beta/Ra
 curl -fsSL https://download.opensuse.org/repositories/network:Meshtastic:beta/Raspbian_12/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/network_Meshtastic_beta.gpg > /dev/null
 sudo apt update
 sudo apt install meshtasticd
-sudo apt-get upgrade -y
-wget –O /etc/meshtasticd/config.d https://github.com/binaryhellstorm/meshconfig/blob/main/NebraHat_1W.yaml
-wget –O /etc/meshtasticd/ https://github.com/binaryhellstorm/meshconfig/blob/main/config.yaml
-wget –O /boot/firmware/ https://github.com/binaryhellstorm/meshconfig/blob/main/config.txt
+sudo apt-get -y upgrade
+sudo wget –O /etc/meshtasticd/config.d https://github.com/binaryhellstorm/meshconfig/raw/refs/heads/main/NebraHat_1W.yaml
+sudo wget –O /etc/meshtasticd/ https://github.com/binaryhellstorm/meshconfig/raw/refs/heads/main/config.yaml
+sudo wget –O /etc/meshtasticd/ https://github.com/binaryhellstorm/meshconfig/raw/refs/heads/main/config.txt
+sudo cp /etc/meshtasticd/config.txt /boot/firmware/config.txt
 echo "Install completed now exiting"
 exit 0
-
-
-
