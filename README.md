@@ -3,6 +3,7 @@ Automated installer for Meshtastic for Linux for NEBRA hat boards.
 To run this installer, flash your Pi with Bookworm 64 bit using the Raspberry Pi iamger
 For Device select "Raspberry Pi 3"
 For OS choose "Raspberry Pi OS (other)" > Raspberry Pi OS Lite (64-Bit)
+
 Choose your SD card
 
 Under "Use OS Customisation" Select "Edit Settings"
