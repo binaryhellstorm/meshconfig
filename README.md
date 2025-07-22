@@ -12,7 +12,7 @@ Check "Set Hostname" and choose a network hostname for the Pi
 
 Check "Set username and password" and set your login credentials 
 
-Check "SEt locale Settings" and choose your geographic region.
+Check "Set locale Settings" and choose your geographic region.
 
 Under Services select "Enable SSH" and "Use password authentication"
 
