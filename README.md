@@ -42,7 +42,11 @@ The installer will run and you may occasionally be prompted to press enter to co
 
 Once this is done you will need to restart, as the installer will have enabled the SPI bus to allow the Pi to communicate with the NEBRA Hat.
 
-After a reboot you should be able to open the Meshtastic app in a web browser by going to https://client.meshtastic.org/ and clicking New Connection>HTTP and then entering your devices hostname or it's IP, for example "https://192.168.1.20". Make sure to select the "Use HTTPS" option.
+After a reboot you should be able to open the Meshtastic app in a web browser. 
+
+For reasons that are still unclear to me, you must first go to the Pi's IP in a browser after first install. So open https://IP replaceing the IP with your unit's IP or hostname. 
+
+After that you can connect by by going to https://client.meshtastic.org/ and clicking New Connection>HTTP and then entering your devices hostname or it's IP, for example "https://192.168.1.20". Make sure to select the "Use HTTPS" option.
 
 Once connected go to Config>Radio Config>LORA and choose your region. For the US you can use the US/915 region. 
 
