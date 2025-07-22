@@ -27,12 +27,15 @@ Connect to it via SSH, if on Windows use Putty https://www.chiark.greenend.org.u
 If on Mac or Linux open a terminal and type "ssh user@hostname" substituing your username and hostname that you set earlier. 
 
 Once connected to the Pi run the following command to download the installer from GIT:
+
 wget https://github.com/binaryhellstorm/meshconfig/raw/refs/heads/main/mesh_installer.sh
 
 Then run this command to enable execution privleges on the file you downloaded:
+
 sudo chmod +x mesh_installer.sh
 
 Then run this command to kick off the automated installer:
+
 sudo ./mesh_installer.sh
 
 The installer will run and you may occasionally be prompted to press enter to continue. When done the installer will say "Install completed now exiting"
